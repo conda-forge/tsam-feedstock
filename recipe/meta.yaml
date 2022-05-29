@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: 6b5b7e9e3364ee69e0fb658c85ec1415ac0c6e44a86e388de4780123ad34e71f
+  sha256: 83b01e3132aac54b9292d822aa4594c87895cf7361fd9b6eb0d1c747d18138e1
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ about:
   summary: Time series aggregation module (tsam) to create typical periods
   license: MIT
   license_file: LICENSE.txt
-  doc_url : https://tsam.readthedocs.io/en/master/
+  doc_url: https://tsam.readthedocs.io/en/master/
   dev_url: https://github.com/FZJ-IEK3-VSA/tsam
 
 
