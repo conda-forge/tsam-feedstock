@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = "2.1.1" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: d904004b812a84a0bb4dbb8c7bd4fddb8bc584b526a21664fe475ca3b4db2f5c
+  sha256: 53905dceea53e91b3bfce71bc794922fd1f395f9eadc0fe84448e21701373fef
 
 build:
   noarch: python
