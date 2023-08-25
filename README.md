@@ -1,11 +1,11 @@
-About tsam
-==========
+About tsam-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tsam-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/FZJ-IEK3-VSA/tsam
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tsam-feedstock/blob/main/LICENSE.txt)
 
 Summary: Time series aggregation module (tsam) to create typical periods
 
