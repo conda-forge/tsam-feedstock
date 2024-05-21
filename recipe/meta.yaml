@@ -20,7 +20,6 @@ requirements:
     - python >=3.0
     - setuptools-git
   run:
-    - networkx
     - numpy >=1.11.0
     - pandas >=0.18.1
     - pyomo >=5.3
