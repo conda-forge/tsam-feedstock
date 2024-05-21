@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: a99ef48c0302c548cd4e48e498e0e43172f9aa0ce216b3343a8a38e88fc806d8
+  sha256: d6187817f7ba99b1dd3d4ec629d16aa5cc596ebfaca8b976d1ab3ae869643c0d
 
 build:
   noarch: python
