@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = "2.1.1" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: d904004b812a84a0bb4dbb8c7bd4fddb8bc584b526a21664fe475ca3b4db2f5c
+  sha256: 2118d92d16c13922861cf7afd3d49d2b718e39c748fc547bb4f8b25cdd965bf2
 
 build:
   noarch: python
@@ -20,21 +20,26 @@ requirements:
     - python >=3.0
     - setuptools-git
   run:
-    - networkx
-    - numpy >=1.11.0
-    - pandas >=0.18.1
+    - numpy >=1.11.0,<1.24
+    - pandas >=0.18.1,<2.0
     - pyomo >=5.3
     - python >=3.0
     - scikit-learn >=0.0
     - tqdm
+    - networkx
 
 test:
   imports:
     - tsam
+  source_files:
+    - .
   commands:
     - pip check
+    - pytest -n auto test/
   requires:
     - pip
+    - pytest-xdist
+    - coincbc
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/tsam
