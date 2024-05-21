@@ -31,15 +31,14 @@ requirements:
 test:
   imports:
     - tsam
+  source_files:
+    - .
   commands:
     - pip check
     - pytest test/
   requires:
     - pip
-    - pytest
- source_files:
-    - .    
-    
+    - pytest    
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/tsam
