@@ -26,6 +26,7 @@ requirements:
     - python >=3.0
     - scikit-learn >=0.0
     - tqdm
+    - networkx
 
 test:
   imports:
