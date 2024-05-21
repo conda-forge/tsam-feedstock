@@ -20,7 +20,7 @@ requirements:
     - python >=3.0
     - setuptools-git
   run:
-    - numpy >=1.11.0
+    - numpy >=1.11.0,<1.22
     - pandas >=0.18.1,<2.0
     - pyomo >=5.3
     - python >=3.0
@@ -35,10 +35,10 @@ test:
     - .
   commands:
     - pip check
-    - pytest test/
+    - pytest -n auto test/
   requires:
     - pip
-    - pytest
+    - pytest-xdist
     - coincbc
 
 about:
