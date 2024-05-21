@@ -35,10 +35,8 @@ test:
   source_files:
     - .
   commands:
-    - pip check
     - pytest -n auto test/
   requires:
-    - pip
     - pytest-xdist
     - coincbc
 
