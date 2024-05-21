@@ -21,7 +21,7 @@ requirements:
     - setuptools-git
   run:
     - numpy >=1.11.0
-    - pandas >=0.18.1
+    - pandas >=0.18.1,<2.0
     - pyomo >=5.3
     - python >=3.0
     - scikit-learn >=0.0
@@ -38,7 +38,8 @@ test:
     - pytest test/
   requires:
     - pip
-    - pytest    
+    - pytest
+    - coincbc
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/tsam
