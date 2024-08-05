@@ -39,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - pytest-xdist
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/tsam
