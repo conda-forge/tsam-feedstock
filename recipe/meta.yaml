@@ -7,27 +7,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: d6187817f7ba99b1dd3d4ec629d16aa5cc596ebfaca8b976d1ab3ae869643c0d
+  sha256: a99ef48c0302c548cd4e48e498e0e43172f9aa0ce216b3343a8a38e88fc806d8
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - pip
-    - python >=3.0
+    - python
     - setuptools-git
+    - pip
   run:
-    - numpy >=1.11.0,<1.24
-    - pandas >=0.18.1,<2.0
-    - pyomo >=6.4.3
-    - python >=3.0
+    - python
     - scikit-learn >=0.0
-    - tqdm
+    - pandas >=0.18.1
+    - numpy >=1.11.0
+    - pyomo >=6.4.3
     - networkx
-    - highs
+    - tqdm
+    - highspy
 
 test:
   imports:
@@ -36,9 +36,9 @@ test:
     - .
   commands:
     - pytest -n auto test/
+    - pip check
   requires:
-    - pytest-xdist
-    - coincbc
+    - pip
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/tsam
