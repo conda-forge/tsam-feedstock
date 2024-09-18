@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python >=3.9,<3.13
-    - setuptools
+    - setuptools-git
     - pip
   run:
     - python >=3.9,<3.13
@@ -28,7 +28,6 @@ requirements:
     - networkx
     - tqdm
     - highspy
-    - setuptools
 
 test:
   imports:
