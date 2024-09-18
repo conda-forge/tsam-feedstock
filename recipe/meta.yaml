@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python >=3.9,<3.13
-    - setuptools-git
+    - setuptools
     - pip
   run:
     - python >=3.9,<3.13
