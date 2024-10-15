@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = "2.3.5" %}
+{% set version = "2.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: c6c1ce8814c0e21e424f0deeddf82b863f01b1eae39a3f46ec42accefa041dc0
+  sha256: f2f75cbcd5d5d63d9d77ec5edb61e7efeb3170ebef4591272ef13a7bd84cc9d4
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python >=3.9,<3.13
-    - setuptools-git
+    - setuptools >=64.0.0
     - pip
   run:
     - python >=3.9,<3.13
