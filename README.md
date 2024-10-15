@@ -151,6 +151,3 @@ Feedstock Maintainers
 * [@julian-belina](https://github.com/julian-belina/)
 * [@maximilian-hoffmann](https://github.com/maximilian-hoffmann/)
 
-
-<!-- dummy commit to enable rerendering -->
-
