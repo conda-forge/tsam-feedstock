@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
   sha256: f2f75cbcd5d5d63d9d77ec5edb61e7efeb3170ebef4591272ef13a7bd84cc9d4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - setuptools >=64.0.0
     - pip
   run:
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - scikit-learn >=0.0
     - pandas >2.0.3
     - numpy >=1.20
@@ -40,6 +40,7 @@ test:
   requires:
     - pip
     - pytest-xdist
+    - python {{ python_min }}
 
 about:
   home: https://github.com/FZJ-IEK3-VSA/tsam
