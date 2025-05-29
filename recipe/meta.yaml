@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = "2.3.6" %}
+{% set version = "2.3.7" %}
 {% set python_min = "3.9" %}
 {% set python_max = "3.13" %}
 
@@ -22,7 +22,7 @@ requirements:
     - setuptools >=64.0.0
     - pip
   run:
-    - python >={{ python_min }},<{{ python_max }}
+    - python >={{ python_min }},<={{ python_max }}
     - scikit-learn >=0.0
     - pandas >2.0.3
     - numpy >=1.20
