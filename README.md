@@ -147,7 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@OfficialCodexplosive](https://github.com/OfficialCodexplosive/)
 * [@julian-belina](https://github.com/julian-belina/)
 * [@maximilian-hoffmann](https://github.com/maximilian-hoffmann/)
 
