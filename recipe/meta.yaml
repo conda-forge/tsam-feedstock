@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = "2.3.7" %}
+{% set version = "2.3.8" %}
 {% set python_min = "3.9" %}
 {% set python_max = "3.13" %}
 
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: 708fa0a0bd39e9fee5b3df9cbce94c5d5af54947f41482ecd7bc89f5cebd0a03
+  sha256: 2e88105cd9fed4ae2e64a601cf62d30eb8b1a0b0dc5f3b2cf3b9f89db23cd32e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
