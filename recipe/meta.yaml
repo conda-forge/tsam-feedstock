@@ -1,7 +1,7 @@
 {% set name = "tsam" %}
 {% set version = "3.0.0" %}
-{% set python_min = "3.9" %}
-{% set python_max = "3.13" %}
+{% set python_min = "3.10" %}
+{% set python_max = "3.14" %}
 
 package:
   name: {{ name|lower }}
@@ -23,13 +23,15 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<={{ python_max }}
-    - scikit-learn >=0.0
-    - pandas >2.0.3
-    - numpy >=1.20
-    - pyomo >=6.4.3
-    - networkx
-    - tqdm
-    - highspy
+    - scikit-learn >=1.3.0,<=1.8.0
+    - pandas >=2.2.0,<=3.0.0
+    - numpy >=1.22.4,<=2.4.1
+    - pyomo >=6.4.3,<=6.95
+    - networkx >=2.5,<=3.6.1
+    - tqdm >=4.21.0,<=4.67.1
+    - highspy >=1.7.2,<=1.12.0
+    - plotly >=5.0.0
+    - matplotlib
 
 test:
   imports:
