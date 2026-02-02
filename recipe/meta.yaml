@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsam-{{ version }}.tar.gz
-  sha256: 8574f045f28a06340cbc3a7909f3fb023c88ed996fcb2593b058b9f88830186f
+  url: https://github.com/FZJ-IEK3-VSA/tsam/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 94c03ffb65f7f7ef300d9989863bdaed486d8a644ba82c954397336d72605689
 
 build:
   noarch: python
