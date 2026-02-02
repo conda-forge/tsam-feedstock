@@ -1,5 +1,5 @@
 {% set name = "tsam" %}
-{% set version = ".3.0.0" %}
+{% set version = "3.0.0" %}
 {% set python_min = "3.10" %}
 {% set python_max = "3.14" %}
 
@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v{{ version }}.tar.gz
+  url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v.{{ version }}.tar.gz
   sha256: 94c03ffb65f7f7ef300d9989863bdaed486d8a644ba82c954397336d72605689
 
 build:
