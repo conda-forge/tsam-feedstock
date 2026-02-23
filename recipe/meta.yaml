@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v{{ version }}.tar.gz
-  sha256: 4071ba2f9810bf05495642bf8ee8374c71b3710ad6203c63fef76e586cb3afd6
+  sha256: 391e3126a4086bf084f94741fc02990709981612c8785889771ac2272cf2685d
 
 build:
   noarch: python
