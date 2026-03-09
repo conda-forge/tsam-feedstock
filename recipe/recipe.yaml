@@ -4,11 +4,11 @@ context:
   python_max: "3.14.3"
 
 package:
-  name: fine
+  name: tsam
   version: ${{ version }}
 
 source:
-  url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v{{ version }}.tar.gz
+  url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v${{ version }}.tar.gz
   sha256: 391e3126a4086bf084f94741fc02990709981612c8785889771ac2272cf2685d
 
 build:
