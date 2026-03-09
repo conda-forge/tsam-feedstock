@@ -9,10 +9,6 @@ Package license: MIT
 
 Summary: Time series aggregation module (tsam) to create typical periods
 
-Development: https://github.com/FZJ-IEK3-VSA/tsam
-
-Documentation: https://tsam.readthedocs.io/en/master/
-
 Current build status
 ====================
 
@@ -148,5 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@julian-belina](https://github.com/julian-belina/)
-* [@maximilian-hoffmann](https://github.com/maximilian-hoffmann/)
 
