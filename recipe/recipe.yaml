@@ -19,7 +19,8 @@ build:
 requirements:
   host:
   - python ${{ python_min }}.*
-  - setuptools >=77.0.0
+  - hatchling
+  - hatch-vcs
   - pip
   run:
   - python >=${{ python_min }},<=${{ python_max }}
