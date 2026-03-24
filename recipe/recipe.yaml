@@ -35,7 +35,7 @@ requirements:
 
 tests:
 - script:
-    - pytest -n auto -vvv
+    - pytest -n auto -vvv test
   requirements:
       run:
         - pytest
@@ -43,7 +43,7 @@ tests:
         - python ${{ python_min }}.*
   files:
       source:
-        - .
+        - test
 about:
   homepage: https://github.com/FZJ-IEK3-VSA/tsam
   summary: Time series aggregation module (tsam) to create typical periods
