@@ -45,6 +45,7 @@ tests:
     files:
       source:
         - test/
+        - docs/notebooks/
         - pyproject.toml
 about:
   homepage: https://github.com/FZJ-IEK3-VSA/tsam
