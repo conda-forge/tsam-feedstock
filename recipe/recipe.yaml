@@ -1,7 +1,7 @@
 context:
-  version: "3.3.0"
+  version: "3.4.0"
   python_min: "3.10"
-  python_max: "3.14.3"
+  python_max: "3.14.4"
 
 package:
   name: tsam
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v${{ version }}.tar.gz
-  sha256: 79adc4aa9bfc75de5ff824b0f9f000e0c9f631114f86f917a3e6ebe404d22fe6
+  sha256: 66b90d601022490182eae11a29d2f8c814bd8bc4a1130839d42b476119cb9851
 
 build:
   script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation
@@ -25,12 +25,12 @@ requirements:
   run:
     - python >=${{ python_min }},<=${{ python_max }}
     - scikit-learn >=1.3.0,<=1.8.0
-    - pandas >=2.2.0,<=3.0.1
-    - numpy >=1.22.4,<=2.4.3
+    - pandas >=2.2.0,<=3.0.3
+    - numpy >=1.22.4,<=2.4.4
     - pyomo >=6.4.3,<=6.10.0
     - networkx >=2.5,<=3.6.1
     - tqdm >=4.21.0,<=4.67.3
-    - highspy >=1.7.2,<=1.13.1
+    - highspy >=1.7.2,<=1.14.0
     - plotly >=5.0.0,<=6.6.0
 
 tests:
@@ -38,8 +38,7 @@ tests:
       - pytest -n auto -vvv
     requirements:
       run:
-        - pytest <=9.0.2
-        - pytest-cov <=7.1.0
+        - pytest <=9.0.3
         - pytest-xdist <=3.8.0
         - python ${{ python_min }}.*
     files:
