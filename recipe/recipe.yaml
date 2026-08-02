@@ -1,5 +1,5 @@
 context:
-  version: "3.4.2"
+  version: "4.0.0"
   python_min: "3.10"
   python_max: "3.14.5"
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v${{ version }}.tar.gz
-  sha256: f88b48576d2470ddb2d3e2bfa69f0f2248f55e2a2d21d1a38bc559f5dc0a9562
+  sha256: 8e003af649f750e84aa4c3975d924808b38f631364a35d3fc27c100b44a6e61c
 
 build:
   script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation
