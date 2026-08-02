@@ -44,8 +44,9 @@ tests:
     files:
       source:
         - test/
-        - docs/notebooks/
+        - docs/data/
         - pyproject.toml
+
 about:
   homepage: https://github.com/FZJ-IEK3-VSA/tsam
   summary: Time series aggregation module (tsam) to create typical periods
