@@ -1,5 +1,5 @@
 context:
-  version: "4.0.0"
+  version: "4.1.0"
   python_min: "3.10"
   python_max: "3.14.6"
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/FZJ-IEK3-VSA/tsam/archive/v${{ version }}.tar.gz
-  sha256: 8e003af649f750e84aa4c3975d924808b38f631364a35d3fc27c100b44a6e61c
+  sha256: a502fe9340eeb11dfafbf08080088782e75a0980d336d1f02811d5225daa2a45
 
 build:
   script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation
@@ -32,7 +32,7 @@ requirements:
     - highspy >=1.7.2,<=1.15.1
     - plotly >=5.0.0,<=6.9.0
     - notebook >=7.5.0,<=7.6.1
-    
+
 tests:
   - script:
       - pytest -n auto -vvv
