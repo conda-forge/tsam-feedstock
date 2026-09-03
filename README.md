@@ -189,4 +189,5 @@ Feedstock Maintainers
 =====================
 
 * [@julian-belina](https://github.com/julian-belina/)
+* [@noah80](https://github.com/noah80/)
 
